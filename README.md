@@ -13,9 +13,9 @@ npm install randomize-with-percentage
 ## Usage
 
 ```ts
-import randomizeWithPercentage from "randomize-with-percentage";
+import randomize from "randomize-with-percentage";
 
-const { selectedListItem, value } = randomizeWithPercentage([
+const { selectedListItem, value } = randomize([
   { value: 1, percent: 50 },
   { value: 2, percent: 50 },
 ]);
@@ -25,10 +25,10 @@ console.log(value)            // shows the selected value.  example -> 1
 ```
 
 ```ts
-import randomizeWithPercentage from "randomize-with-percentage";
+import randomize from "randomize-with-percentage";
 
 // you can set any type in value
-const { selectedListItem, value } = randomizeWithPercentage<string | boolean | number | object>([
+const { selectedListItem, value } = randomize<string | boolean | number | object>([
   { value: "potato", percent: 25 },
   { value: false, percent: 25 },
   { value: 10, percent: 25 },
