@@ -1,8 +1,10 @@
 {
   "name": "randomize-with-percentage",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
-  "main": "src/index.ts",
+  "files": ["/dist"],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "vitest"
   },
@@ -10,7 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/rodrigopacheco100/randomize-with-percentage.git"
   },
-  "keywords": [],
+  "keywords": [
+    "random",
+    "randomization",
+    "percentage",
+    "game-tool",
+    "randomization-with-percentage"
+  ],
   "author": "Rodrigo Pacheco <rodrigopacheco100@gmail.com>",
   "license": "MIT",
   "bugs": {

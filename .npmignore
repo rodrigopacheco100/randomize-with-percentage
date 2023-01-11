@@ -1,5 +1,7 @@
+src
 tests
 .editorconfig
 .eslintrc.json
 .gitignore
+tsconfig.json
 vite.config.ts

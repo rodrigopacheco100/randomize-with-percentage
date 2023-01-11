@@ -3,7 +3,14 @@ export type ListItem<T> = {
   value: T;
 };
 
-const randomizeWithPercentage = <T = unknown>(items: ListItem<T>[]) => {
+export type Result<T> = {
+  selectedListItem: ListItem<T>;
+  value: T;
+};
+
+export default function randomize<T = unknown>(
+  items: ListItem<T>[]
+): Result<T> {
   const allPercentageSum = items.reduce((acc, item) => acc + item.percent, 0);
 
   if (allPercentageSum !== 100) {
@@ -33,6 +40,4 @@ const randomizeWithPercentage = <T = unknown>(items: ListItem<T>[]) => {
     value: selectedListItem.value,
     selectedListItem,
   };
-};
-
-export default randomizeWithPercentage;
+}
